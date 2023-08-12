@@ -7,6 +7,26 @@
   font-size: 20px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .caja {
   padding: 20px;
   background-color: #f0f0f0;
@@ -23,5 +43,7 @@
 .caja p {
   margin-bottom: 0;
 }
+
+
 
 /*# sourceMappingURL=estilos.css.map */
