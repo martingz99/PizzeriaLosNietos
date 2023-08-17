@@ -7,6 +7,9 @@
     font-size: 20px;
 }
 
+$color-primario: #ffffff;
+$color-secundario: #000;
+$font-secundaria: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 * {
     margin: 0;
     padding: 0;
@@ -44,9 +47,20 @@ h2 {
     margin-bottom: 0;
 }
 
-ul li a{
-    text-decoration: none;
+.titulo{
+    font-family: $font-secundaria;
 }
+
+footer{
+    ul{
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 
 
 /*# sourceMappingURL=estilos.css.map */

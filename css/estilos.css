@@ -44,7 +44,11 @@ h2 {
   margin-bottom: 0;
 }
 
-ul li a {
+.titulo {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+footer ul li a {
   text-decoration: none;
 }
 
