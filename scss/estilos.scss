@@ -6,22 +6,35 @@
     font-family: "Nunito", sans-serif;
     font-size: 20px;
 }
-
-$color-primario: #ffffff;
-$color-secundario: #000;
+/*variables*/
+$color-primario: #070606;
+$color-secundario: #ffffff;
 $font-secundaria: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+/*Condicionales*/
+$color-caja: red;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-h1 {
-    text-align: center;
+/*Animacion*/
+.icon-pizza{
+    animation-name: logo-pizza;
+    animation-iteration-count: 8;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
-h2 {
-    text-align: center;
+@keyframes logo-pizza {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .contenedor {
@@ -29,26 +42,45 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-
-.caja {
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #000;
-    margin-bottom: 20px;
+/*Condicionales*/
+.caja{
+    @if ($color-caja ==red){
+        margin-top: 10px;
+        border: 1px solid $color-secundario;
+        margin-bottom: 20px;
+    } 
+    @else{
+        background-color: aqua;
+    }
 }
 
+/*Bucle o ciclo for*/
+$i: 1;
+
+@for $i from 1 through 2{
+    h#{$i}{
+        text-align: center;
+    }
+}
+
+/*Mixins*/
+@mixin crearBordes($colorBorde,$tamanio,$colorBack){
+    border-bottom: $tamanio solid $colorBorde;
+    padding-bottom: $tamanio;
+    text-align: center;
+    background-color: $colorBack;
+}
+/*llamado a la funcion*/
 .caja h4 {
-    margin-top: 0;
-    border-bottom: 1px solid #000;
-    padding-bottom: 5px;
+    @include crearBordes(#f8efef,10px,#fff)
 }
-
-.caja p {
-    margin-bottom: 0;
+/*mixins sin parametros*/
+@mixin crearFont(){
+    font-family: $font-secundaria;
 }
 
 .titulo{
-    font-family: $font-secundaria;
+    @include crearFont()
 }
 
 footer{

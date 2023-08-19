@@ -7,12 +7,45 @@
   font-size: 20px;
 }
 
+/*variables*/
+/*Condicionales*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*Animacion*/
+.icon-pizza {
+  animation-name: logo-pizza;
+  animation-iteration-count: 8;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes logo-pizza {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Condicionales*/
+.caja {
+  margin-top: 10px;
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+/*Bucle o ciclo for*/
 h1 {
   text-align: center;
 }
@@ -21,29 +54,16 @@ h2 {
   text-align: center;
 }
 
-.contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.caja {
-  padding: 20px;
-  background-color: #f0f0f0;
-  border: 1px solid #000;
-  margin-bottom: 20px;
-}
-
+/*Mixins*/
+/*llamado a la funcion*/
 .caja h4 {
-  margin-top: 0;
-  border-bottom: 1px solid #000;
-  padding-bottom: 5px;
+  border-bottom: 10px solid #f8efef;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #fff;
 }
 
-.caja p {
-  margin-bottom: 0;
-}
-
+/*mixins sin parametros*/
 .titulo {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
