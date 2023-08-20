@@ -37,11 +37,7 @@ $color-caja: red;
     }
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /*Condicionales*/
 .caja{
     @if ($color-caja ==red){

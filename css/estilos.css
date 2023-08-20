@@ -32,12 +32,6 @@
     transform: rotate(360deg);
   }
 }
-.contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /*Condicionales*/
 .caja {
   margin-top: 10px;
