@@ -37,7 +37,6 @@ $color-caja: red;
     }
 }
 
-
 /*Condicionales*/
 .caja{
     @if ($color-caja ==red){
@@ -88,7 +87,5 @@ footer{
         }
     }
 }
-
-
 
 /*# sourceMappingURL=estilos.css.map */
