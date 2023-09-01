@@ -128,14 +128,14 @@ h3 {
   grid-area: c1;
   background-image: url("../assets/7up.webp");
   background-size: cover;
-  position: relative;
+  background-position: center;
   width: 100%;
   height: 100%;
 }
 
 .c2 {
   grid-area: c2;
-  background-image: url("../assets/coca.webp");
+  background-image: url("../assets/coquita.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -144,7 +144,7 @@ h3 {
 
 .c3 {
   grid-area: c3;
-  background-image: url("../assets/pessi.webp");
+  background-image: url("../assets/pepsi.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -198,7 +198,7 @@ footer ul li a {
     width: 95%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .contenedor-imagenes {
     width: 90%;
   }
@@ -206,7 +206,7 @@ footer ul li a {
     width: 48%;
   }
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 576px) {
   h1 {
     font-size: 22px;
   }
