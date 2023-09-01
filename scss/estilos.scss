@@ -105,7 +105,7 @@ $color-caja: red;
 }
 
 .the-grid {
-    width: 700px;
+    width: 800px;
     height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -132,6 +132,8 @@ h3{
     background-image: url('../assets/7up.webp');
     background-size: cover;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .c2{
@@ -151,6 +153,7 @@ h3{
     width: 100%;
     height: 100%;
 }
+
 
 @keyframes logo-pizza {
     0%{
